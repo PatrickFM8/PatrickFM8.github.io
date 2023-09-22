@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function LandingPage() {
   return (
-    <div className="flex flex-col items-center lg:ml-72 mt-10">
+    <div className="flex flex-col items-center lg:ml-72 mt-10 text-slate-600">
 
       <h1 className="text-4xl font-bold mb-4">Welcome to Our Product</h1>
       <p className="text-xl mb-6 text-center">
