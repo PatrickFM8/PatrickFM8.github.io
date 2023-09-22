@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 function LandingPage() {
   return (
-    <div className="landing-page">
-      <h1>Welcome to Our Product</h1>
-      <p>
-        Learn more about our amazing product and its features. Experience the future of mapping solutions.
+    <div className="flex flex-col items-center lg:ml-72 mt-10">
+
+      <h1 className="text-4xl font-bold mb-4">Welcome to Our Product</h1>
+      <p className="text-xl mb-6 text-center">
+        Learn more about our amazing product and its features. Experience the future of charging infrastructure mapping solutions.
       </p>
-      <Link to="/demo">Try the Demo</Link>
+      <Link to="/demo" className="text-green-500 underline">Try the Demo</Link>
     </div>
+  
   );
 }
 
