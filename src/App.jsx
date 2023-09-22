@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
      <div className="h-screen">
-      
+      <Navbar></Navbar>
         <div className="flex overflow-auto justify-center items-center">
           <Routes>
             <Route path="/" element={<LandingPage />} />
