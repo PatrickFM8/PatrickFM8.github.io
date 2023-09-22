@@ -7,7 +7,7 @@ import Navbar from './NavBar';
 function App() {
   return (
     <Router>
-     <div className="h-screen">
+     <div className="h-screen bg-white">
       <Navbar></Navbar>
         <div className="flex overflow-auto justify-center items-center">
           <Routes>
