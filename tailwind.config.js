@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: ['./index.html', './src/**/*.{vue,js,jsx,ts,tsx}'], // Adjust this path based on your project structure
+  content: [
+    // Example content paths...
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
