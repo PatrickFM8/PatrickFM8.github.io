@@ -73,3 +73,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* App.css */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-logo {
+  animation: rotate 120s linear infinite;
+}

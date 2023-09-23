@@ -101,10 +101,12 @@ export default function NavBar() {
       </Transition.Root>
 
       {/* Static sidebar for desktop */}
-      <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-60 lg:flex-col">
         <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
-          <div className="flex h-16 shrink-0 items-center">
-           ENEPORT
+          <div className="flex h-16 shrink-0 items-center mt-4">
+          <img src="logo.png" width="60" height="60" alt="Eneport Logo" className=''></img>
+          <p>E N E P O R T</p>
+          
           </div>
           <nav className="flex flex-1 flex-col">
           <ul role="list" className="-mx-2 space-y-1">
