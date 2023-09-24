@@ -20,7 +20,7 @@ function MapDemo() {
   });
 
   return (
-    <div className="flex items-center justify-center h-screen lg:ml-72 z-40 relative">
+    <div className="flex flex-col items-center justify-center h-screen lg:ml-72 z-40 relative">
      <div className="relative ipad-frame w-[60vw] h-[45vw] md:w-[50vw] md:h-[37.5vw] lg:w-[40vw] lg:h-[30vw] rounded-xl bg-black overflow-hidden border-8 border-black shadow-xl">
     <div className="absolute inset-0 md:inset-2 rounded-sm overflow-hidden">
         <MapContainer center={centerCoordinates} zoom={zoomLevel} className="h-full w-full rounded-lg">
@@ -28,19 +28,21 @@ function MapDemo() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution=''
           />
-          <CircleMarker center={centerCoordinates} radius={10} color="blue" fillColor="blue" fillOpacity={0.6} />
+          <CircleMarker center={centerCoordinates} radius={20} color="blue" fillColor="blue" fillOpacity={0.6} />
           {
             showPins && (
               <>
                 <Marker position={[59.3293 + 0.002, 18.0686]} icon={customIcon} />
                 <Marker position={[59.3293 - 0.002, 18.0686]} icon={customIcon} />
+                
               </>
             )
           }
         </MapContainer>
         </div>
+        
       </div>
-      <button onClick={() => setShowPins(true)} className="z-20 absolute bottom-4 right-4">Drop Pins</button>
+      <button onClick={() => setShowPins(true)} className='mt-4'>Nearest Net</button>
     </div>
   );
 }
