@@ -6,11 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      borderWidth: {
-        '12': '12px',
-        '16': '16px',
-        // ... add other sizes as needed
-      }
+      
     },
   },
   variants: {
