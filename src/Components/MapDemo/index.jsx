@@ -22,7 +22,7 @@ function MapDemo() {
   return (
     <div className="flex items-center justify-center h-screen lg:ml-72 z-40 relative">
       <img src="Frontclean.png" alt="iPad Mockup" className="relative z-0" width="800" height="570" />
-      <div className="rounded-xl pr-4 h-[74vh] w-[59vw] absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden">
+      <div className="rounded-xl pr-4 h-[73vh] w-[49vw] absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden">
         <MapContainer center={centerCoordinates} zoom={zoomLevel} className="h-full w-full rounded-lg">
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
