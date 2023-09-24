@@ -5,7 +5,13 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderWidth: {
+        '12': '12px',
+        '16': '16px',
+        // ... add other sizes as needed
+      }
+    },
   },
   variants: {
     extend: {},

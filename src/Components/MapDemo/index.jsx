@@ -21,12 +21,12 @@ function MapDemo() {
 
   return (
     <div className="flex items-center justify-center h-screen lg:ml-72 z-40 relative">
-      <img src="Frontclean.png" alt="iPad Mockup" className="relative z-0" width="800" height="570" />
-      <div className="rounded-xl pr-4 h-[73vh] w-[49vw] absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden">
+     <div className="relative ipad-frame w-[60vw] h-[45vw] md:w-[50vw] md:h-[37.5vw] lg:w-[40vw] lg:h-[30vw] rounded-xl bg-black overflow-hidden border-8 md:border-12 border-black shadow-xl">
+    <div className="absolute inset-0 rounded-sm overflow-hidden">
         <MapContainer center={centerCoordinates} zoom={zoomLevel} className="h-full w-full rounded-lg">
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            attribution=''
           />
           <CircleMarker center={centerCoordinates} radius={10} color="blue" fillColor="blue" fillOpacity={0.6} />
           {
@@ -38,6 +38,7 @@ function MapDemo() {
             )
           }
         </MapContainer>
+        </div>
       </div>
       <button onClick={() => setShowPins(true)} className="z-20 absolute bottom-4 right-4">Drop Pins</button>
     </div>
