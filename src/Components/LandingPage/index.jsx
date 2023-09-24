@@ -23,7 +23,7 @@ function LandingPage() {
   return (
     <div className="flex flex-col items-center lg:ml-72 mr-1 mt-10 text-slate-600 w-full border-0">
         {/* Header Section with 100vh */}
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-screen mb-4 mt-[calc(-10vh)] md:mt-[calc(0vh)]">
         <img src="logo.png" width="120" height="120" alt="Eneport Logo" />
         <h1 className="text-4xl font-bold mb-4">E N E P O R T</h1>
         <p className="text-xl mb-6 text-center typing-effect">
