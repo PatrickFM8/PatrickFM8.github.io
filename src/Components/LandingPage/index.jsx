@@ -47,7 +47,7 @@ function LandingPage() {
   
   
   return (
-    <div className="flex flex-col items-center lg:ml-72 mr-1 mt-10 text-slate-600 w-full border-0">
+    <div className="flex flex-col items-center lg:ml-72 mr-1 mt-10 text-slate-600 bg-white w-full border-0">
         {/* Header Section with 100vh */}
         <div className="relative flex flex-col items-center justify-center h-screen mb-4 mt-[calc(-10vh)] md:mt-[calc(0vh)]">
 
