@@ -52,7 +52,7 @@ function LandingPage() {
         <div className="relative flex flex-col items-center justify-center h-screen mb-4 mt-[calc(-10vh)] md:mt-[calc(0vh)]">
 
 {/* Blurred Circle Background */}
-<div className="hidden absolute w-80 h-80 md:w-144 md:h-144 blurred-circle negative-z"></div>
+<div className="absolute w-full h-full md:w-[500px] md:h-[500px] blurred-circle"></div>
 
 {/* Wrapper div to position content above the circle */}
 <div className="relative z-10 flex flex-col items-center justify-center">
@@ -109,7 +109,7 @@ function LandingPage() {
 </div>
 
 <div className="flex w-full md:w-1/4 items-center justify-center z-10"> {/* Added z-10 to ensure it's above the blurred circle */}
-  <Link to="/demo" className="mt-4 px-6 py-2 border rounded bg-green-500 text-white hover:bg-green-600 hover:text-white transition">
+  <Link to="/demo" className="mt-4 px-6 py-2 rounded-full bg-green-500 text-white hover:bg-green-600 hover:text-white transition">
     Try Demo
   </Link>
 </div>
@@ -122,51 +122,88 @@ function LandingPage() {
      <div  className="max-w-4xl p-8 mt-10 space-y-8 md:space-y-0 md:grid md:grid-cols-3 gap-4">
 
   {/* Card 1 */}
-  <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
-    <div className="w-32 h-32 bg-gray-300 rounded-full mb-4"></div> {/* Image Placeholder */}
-    <h3 className="text-gray-700 font-semibold">Anoya Yousef</h3>
-    <h5 className="text-gray-700 font-semibold mb-2 text-xs">CEO</h5>
-    <p className="text-sm text-gray-600 text-center">Short description for card 1.</p>
+  <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
+  
+  {/* Blurred Circle */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  
+  <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+    <img src="Anoya.png" alt="Anoya Yousef"></img> {/* Added an alt attribute for accessibility */}
   </div>
+  <h3 className="text-gray-700 font-semibold z-10">Anoya Yousef</h3>
+  <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CTO</h5>
+  <p className="hidden text-sm text-gray-600 text-center">Short description for card 4.</p>
+</div>
 
   {/* Card 2 */}
-  <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
-    <div className="w-32 h-32 bg-gray-300 rounded-full mb-4"></div> {/* Image Placeholder */}
-    <h3 className="text-gray-700 font-semibold">Christoffer Eriksson</h3>
-    <h5 className="text-gray-700 font-semibold mb-2 text-xs">COO</h5>
-    <p className="text-sm text-gray-600 text-center">Short description for card 2.</p>
+  <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
+  
+  {/* Blurred Circle */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  
+  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+ 
   </div>
+  <h3 className="text-gray-700 font-semibold z-10">Christoffer Eriksson</h3>
+  <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CSO</h5>
+  <p className="hidden text-sm text-gray-600 text-center">Short description for card 4.</p>
+</div>
 
   {/* Card 3 */}
-  <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
-    <div className="w-32 h-32 bg-gray-300 rounded-full mb-4"></div> {/* Image Placeholder */}
-    <h3 className="text-gray-700 font-semibold">Moa Bernard</h3>
-    <h5 className="text-gray-700 font-semibold mb-2 text-xs">CMO</h5>
-    <p className="text-sm text-gray-600 text-center">Short description for card 3.</p>
+<div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
+  
+  {/* Blurred Circle */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  
+  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+ 
+  </div>
+    <h3 className="text-gray-700 font-semibold z-10">Moa Bernard</h3>
+    <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CMO</h5>
+    <p className="hidden text-sm text-gray-600 text-center">Short description for card 3.</p>
   </div>
 
   {/* Card 4 */}
-  <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
-    <div className="w-32 h-32 bg-gray-300 rounded-full mb-4"></div> {/* Image Placeholder */}
-    <h3 className="text-gray-700 font-semibold">Patrick Widuch</h3>
-    <h5 className="text-gray-700 font-semibold mb-2 text-xs">CTO</h5>
-    <p className="text-sm text-gray-600 text-center">Short description for card 4.</p>
+<div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
+  
+  {/* Blurred Circle */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  
+  <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+    <img src="pw.png" alt="Patrick Widuch"></img> {/* Added an alt attribute for accessibility */}
   </div>
+  <h3 className="text-gray-700 font-semibold z-10">Patrick Widuch</h3>
+  <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CTO</h5>
+  <p className="hidden text-sm text-gray-600 text-center">Short description for card 4.</p>
+</div>
+
 
   {/* Card 5 */}
-  <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
-    <div className="w-32 h-32 bg-gray-300 rounded-full mb-4"></div> {/* Image Placeholder */}
-    <h3 className="text-gray-700 font-semibold">Jan Carius</h3>
-    <h5 className="text-gray-700 font-semibold mb-2 text-xs">CSO</h5>
-    <p className="text-sm text-gray-600 text-center">Short description for card 5.</p>
+  <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
+  
+  {/* Blurred Circle */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  
+  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+ 
+  </div>
+    <h3 className="text-gray-700 font-semibold z-10">Jan Carius</h3>
+    <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CFO</h5>
+    <p className="hidden text-sm text-gray-600 text-center">Short description for card 5.</p>
   </div>
 
   {/* Card 6 */}
-  <div className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
-    <div className="w-32 h-32 bg-gray-300 rounded-full mb-4"></div> {/* Image Placeholder */}
-    <h3 className="text-gray-700 font-semibold">Axel Tardell</h3>
-    <h5 className="text-gray-700 font-semibold mb-2 text-xs">CPO</h5>
-    <p className="text-sm text-gray-600 text-center">Short description for card 6.</p>
+  <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
+  
+  {/* Blurred Circle */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  
+  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+ 
+  </div>
+    <h3 className="text-gray-700 font-semibold z-10">Axel Tardell</h3>
+    <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">COO</h5>
+    <p className="hidden text-sm text-gray-600 text-center">Short description for card 6.</p>
   </div>
 
 </div>

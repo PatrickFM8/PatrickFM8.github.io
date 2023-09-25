@@ -114,7 +114,7 @@ button:focus-visible {
 
 .blurred-circle {
   background-image: radial-gradient(circle, #cacffa, #c9d4ef 26%, #aed3ff 53%, #9bffa5 74%, #d798e1);
-  filter: blur(80px);
+  filter: blur(140px);
   border-radius: 50%;
   z-index: 0;
 }
@@ -148,6 +148,28 @@ button:focus-visible {
   border-radius: 50%;
   z-index: 0;
   background-image: radial-gradient(circle, #cad2fa, #c9b4af 26%, #aad1ff 53%, #9ba0a5 74%, #d798b1);
+}
+
+.blurred-circle-team {
+  filter: blur(70px);
+  border-radius: 50%;
+  z-index: 0;
+  background-image: radial-gradient(circle, #a8e6cf, #56c084 26%, #7fc7f3 53%, #569ed1 74%, #1b588a);
+}
+
+
+.blurred-circle-team-blue {
+  filter: blur(70px);
+  border-radius: 50%;
+  z-index: 0;
+  background-image: radial-gradient(circle, #a8e6fa, #7fc7f3 26%, #569ed1 53%, #337ab2 74%, #1b588a);
+}
+
+.blurred-circle-team-green {
+  filter: blur(70px);
+  border-radius: 50%;
+  z-index: 0;
+  background-image: radial-gradient(circle, #a8e6cf, #7fd3a7 56%, #56c084 53%, #339a5e 84%, #1b7040);
 }
 
 @media (max-width: 768px) { /* or another appropriate breakpoint */
