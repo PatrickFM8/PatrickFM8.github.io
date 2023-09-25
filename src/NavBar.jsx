@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { Bars3Icon, HomeIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, HomeIcon, XMarkIcon,DeviceTabletIcon } from '@heroicons/react/24/outline';
 import { Link, useLocation } from 'react-router-dom';
 
 const navigationItems = [
@@ -31,7 +31,7 @@ const navigationItems = [
   {
     name: 'Demo',
     href: '/demo',
-    icon: HomeIcon,
+    icon: DeviceTabletIcon,
     subItems: [],
   },
 ];
