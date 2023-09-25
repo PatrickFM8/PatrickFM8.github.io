@@ -125,25 +125,26 @@ button:focus-visible {
   border-radius: 50%;
   z-index: 0;
 }
+
 .negative-z {
   z-index: -1;
 }
 
 .blurred-circle-free {
   background-image: radial-gradient(circle, #cacffa, #c9d4ef 26%, #aed3ff 53%, #9bffa5 74%, #d798e1);
-  filter: blur(70px);
+  filter: blur(40px);
   border-radius: 50%;
   z-index: 0;
 }
 .blurred-circle-pro {
   background-image: radial-gradient(circle, #caeefa, #b9e0cf 26%, #a0d8ff 53%, #9bd5a5 74%, #b978c1);
-  filter: blur(70px);
+  filter: blur(40px);
   border-radius: 50%;
   z-index: 0;
 }
 
 .blurred-circle-custom {
-  filter: blur(70px);
+  filter: blur(40px);
   border-radius: 50%;
   z-index: 0;
   background-image: radial-gradient(circle, #cad2fa, #c9b4af 26%, #aad1ff 53%, #9ba0a5 74%, #d798b1);
