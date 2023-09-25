@@ -4,10 +4,37 @@ import { Bars3Icon, HomeIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link, useLocation } from 'react-router-dom';
 
 const navigationItems = [
-  { name: 'Home', href: '/', icon: HomeIcon },
-  { name: 'Demo', href: '/demo', icon: HomeIcon },
+  {
+    name: 'Home',
+    href: '/',
+    icon: HomeIcon,
+    subItems: [
+      {
+        name: '- What we do',
+        href: '/#what-we-do',
+      },
+      {
+        name: '- About Us',
+        href: '/#about-us',
+      },
+      {
+        name: '- Pricing',
+        href: '/#pricing',
+      },
+      {
+        name: '- Contact',
+        href: '/#contact',
+      },
+      // ... more subsections can go here
+    ],
+  },
+  {
+    name: 'Demo',
+    href: '/demo',
+    icon: HomeIcon,
+    subItems: [],
+  },
 ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -16,10 +43,21 @@ export default function NavBar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
 
+  const handleMainNavigationClick = (href) => {
+    if (href.charAt(href.length - 1) === '/') {
+      window.location.hash = "";
+    }
+  };
+
   const navigation = navigationItems.map(item => ({
     ...item,
-    current: item.href === location.pathname,
+    current: item.href.split("#")[0] === location.pathname,
+    subItems: item.subItems.map(subItem => ({
+      ...subItem,
+      current: subItem.href === location.pathname + location.hash
+    }))
   }));
+
   return (
     <>
       <Transition.Root show={sidebarOpen} as={Fragment}>
@@ -69,29 +107,46 @@ export default function NavBar() {
                   </div>
                   <nav className="flex flex-1 flex-col">
                   <ul role="list" className="-mx-2 space-y-1">
-      {navigation.map((item) => (
-        <li key={item.name}>
-          <Link
-            to={item.href}
-            className={classNames(
-              item.current
-                ? 'bg-gray-200 text-indigo-600'
-                : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-              'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
-            )}
-          >
-            <item.icon
+        {navigation.map((item) => (
+          <li key={item.name}>
+            <Link
+              to={item.href}
+              onClick={() => handleMainNavigationClick(item.href)} // Add this line
               className={classNames(
-                item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600',
-                'h-6 w-6 shrink-0'
+                item.current ? 'bg-gray-200 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
+                'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
               )}
-              aria-hidden="true"
-            />
-            {item.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
+            >
+              <item.icon
+                className={classNames(
+                  item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600',
+                  'h-6 w-6 shrink-0'
+                )}
+                aria-hidden="true"
+              />
+              {item.name}
+            </Link>
+            {/* Subsections */}
+            {item.subItems && item.subItems.length > 0 && (
+              <ul className="pl-5 mt-2 space-y-1">
+                {item.subItems.map((subItem) => (
+                  <li key={subItem.name}>
+                    <Link
+                      to={subItem.href}
+                      className={classNames(
+                        subItem.current ? 'bg-gray-200 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
+                        'group flex gap-x-3 rounded-md p-1 text-xs leading-6 font-semibold'
+                      )}
+                    >
+                      {subItem.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
                   </nav>
                 </div>
               </Dialog.Panel>
@@ -110,29 +165,46 @@ export default function NavBar() {
           </div>
           <nav className="flex flex-1 flex-col">
           <ul role="list" className="-mx-2 space-y-1">
-      {navigation.map((item) => (
-        <li key={item.name}>
-          <Link
-            to={item.href}
-            className={classNames(
-              item.current
-                ? 'bg-gray-200 text-indigo-600'
-                : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-              'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
-            )}
-          >
-            <item.icon
+        {navigation.map((item) => (
+          <li key={item.name}>
+            <Link
+              to={item.href}
+              onClick={() => handleMainNavigationClick(item.href)} // Add this line
               className={classNames(
-                item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600',
-                'h-6 w-6 shrink-0'
+                item.current ? 'bg-gray-200 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
+                'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
               )}
-              aria-hidden="true"
-            />
-            {item.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
+            >
+              <item.icon
+                className={classNames(
+                  item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600',
+                  'h-6 w-6 shrink-0'
+                )}
+                aria-hidden="true"
+              />
+              {item.name}
+            </Link>
+            {/* Subsections */}
+            {item.subItems && item.subItems.length > 0 && (
+              <ul className="pl-5 mt-2 space-y-1">
+                {item.subItems.map((subItem) => (
+                  <li key={subItem.name}>
+                    <Link
+                      to={subItem.href}
+                      className={classNames(
+                        subItem.current ? 'bg-gray-200 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
+                        'group flex gap-x-3 rounded-md p-1 text-xs leading-6 font-semibold'
+                      )}
+                    >
+                      {subItem.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
           </nav>
         </div>
       </div>

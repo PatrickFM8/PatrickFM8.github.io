@@ -1,5 +1,5 @@
-import React, { useState,useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState,useEffect, useRef, } from 'react';
+import { Link,useLocation,useNavigate  } from 'react-router-dom';
 
 function LandingPage() {
   const fullText = "Mapping the Future of Charging Infrastructure. All Data. One Intuitive Platform!";
@@ -12,14 +12,36 @@ function LandingPage() {
       }, 50); // 100ms delay between each character
     }
   }, [currentText]);
-
-  const nextSectionRef = useRef(null);
-
-  const handleScroll = () => {
-    if (nextSectionRef.current) {
-      nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  const location = useLocation();
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (currentText === fullText) {
+      const element = document.getElementById("what-we-do");
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+          navigate("#what-we-do"); // Update using navigate
+        }, 1000);
+      }
     }
-  }
+  }, [currentText, navigate]);
+  
+
+  
+
+  useEffect(() => {
+    if (location.hash) {  // Changed this line to use location from react-router-dom
+        const id = location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+  }, [location.hash]);  // Dependency on the location's hash
+
+  
+  
   return (
     <div className="flex flex-col items-center lg:ml-72 mr-1 mt-10 text-slate-600 w-full border-0">
         {/* Header Section with 100vh */}
@@ -29,14 +51,14 @@ function LandingPage() {
         <p className="text-xl mb-6 text-center typing-effect">
           {currentText}<span className="cursor"></span>
         </p>
-        <button onClick={handleScroll} className="mt-4 px-6 py-2 border rounded bg-green-500 text-white hover:bg-green-600 transition">
+        <button className="hidden mt-4 px-6 py-2 border rounded bg-green-500 text-white hover:bg-green-600 transition">
               Explore
             </button>
       </div>
 
 
       {/* Second Section - Text on Right, Image on Left */}
-      <div ref={nextSectionRef} className="max-w-4xl flex flex-col-reverse md:flex-row-reverse justify-between items-center p-8 mt-10 space-y-8 md:space-y-0 md:space-x-8">
+      <div id="what-we-do" className="max-w-4xl flex flex-col-reverse md:flex-row-reverse justify-between items-center p-8 mt-10 space-y-8 md:space-y-0 md:space-x-8">
        
         <div className="flex-1 w-full md:w-1/2 ml-4">
           <h2 className="text-left text-gray-700 text-3xl font-semibold line-clamp-3 italic">Mapping with Eneport</h2>

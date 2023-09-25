@@ -42,7 +42,8 @@ function MapDemo() {
         </div>
         
       </div>
-      <button onClick={() => setShowPins(true)} className='mt-4'>Nearest Net</button>
+      <button onClick={() => setShowPins(true)} className="mt-4 px-6 py-2 border rounded bg-green-500 text-white hover:bg-green-600 transition">Show Nearest Net</button>
+      
     </div>
   );
 }
