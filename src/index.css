@@ -141,3 +141,9 @@ button:focus-visible {
   z-index: 0;
   background-image: radial-gradient(circle, #cad2fa, #c9b4af 26%, #aad1ff 53%, #9ba0a5 74%, #d798b1);
 }
+
+@media (max-width: 768px) { /* or another appropriate breakpoint */
+  .blurred-circle {
+      filter: blur(20px); /* Adjust value based on what looks best on iPhone */
+  }
+}
