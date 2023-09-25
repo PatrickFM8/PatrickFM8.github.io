@@ -192,8 +192,7 @@ function LandingPage() {
                             </div>
                             <div>
                                 <p className="text-3xl font-bold mb-4">$0</p>
-                                <button className="px-6 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700">Choose</button>
-                            </div>
+                                <button className="px-6 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700" onClick={() => navigate("#contact")}>Choose</button>                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,8 +212,7 @@ function LandingPage() {
                             </div>
                             <div>
                                 <p className="text-3xl font-bold mb-4">$99/mo</p>
-                                <button className="px-6 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700">Choose</button>
-                            </div>
+                                <button className="px-6 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700" onClick={() => navigate("#contact")}>Choose</button>                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,7 +232,7 @@ function LandingPage() {
                             </div>
                             <div>
                                 <p className="text-3xl font-bold mb-4">Contact Us</p>
-                                <button className="px-6 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700">Get Quote</button>
+                                <button className="px-6 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700" onClick={() => navigate("#contact")}>Get Quote</button>
                             </div>
                         </div>
                     </div>
