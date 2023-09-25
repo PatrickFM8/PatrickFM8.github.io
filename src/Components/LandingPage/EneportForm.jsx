@@ -20,7 +20,8 @@ function EneportForm() {
                     type="email" 
                     name="email"
                     placeholder="Enter your email" 
-                    className="flex-1 p-2 border rounded-full" 
+                    className="flex-1 p-2 border rounded-full bg-white" 
+                  
                     required
                 />
                 <button 

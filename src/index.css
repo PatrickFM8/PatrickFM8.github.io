@@ -114,7 +114,7 @@ button:focus-visible {
 
 .blurred-circle {
   background-image: radial-gradient(circle, #cacffa, #c9d4ef 26%, #aed3ff 53%, #9bffa5 74%, #d798e1);
-  filter: blur(40px);
+  filter: blur(80px);
   border-radius: 50%;
   z-index: 0;
 }
@@ -144,6 +144,6 @@ button:focus-visible {
 
 @media (max-width: 768px) { /* or another appropriate breakpoint */
   .blurred-circle {
-      filter: blur(40px); /* Adjust value based on what looks best on iPhone */
+      filter: blur(80px); /* Adjust value based on what looks best on iPhone */
   }
 }

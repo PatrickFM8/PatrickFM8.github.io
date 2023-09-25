@@ -181,7 +181,7 @@ function LandingPage() {
                 <div className="px-4 mb-8 w-full sm:w-1/2 md:w-1/3">
                     <div className="relative h-full">
                         <div className="absolute top-0 left-0 w-full h-full blurred-circle-free z-0 rounded-lg"></div>
-                        <div className="relative z-10 shadow-lg rounded-lg p-6 bg-white h-full flex flex-col justify-between">
+                        <div className="relative z-10 rounded-lg p-6 bg-slate-100 h-full flex flex-col justify-between">
                             <div>
                                 <h3 className="text-xl font-bold mb-4">Free</h3>
                                 <ul className="mb-6">
@@ -201,7 +201,7 @@ function LandingPage() {
                 <div className="px-4 mb-8 w-full sm:w-1/2 md:w-1/3">
                     <div className="relative h-full">
                         <div className="absolute top-0 left-0 w-full h-full blurred-circle-pro z-0 rounded-lg"></div>
-                        <div className="relative z-10 shadow-lg rounded-lg p-6 bg-white h-full flex flex-col justify-between">
+                        <div className="relative z-10 rounded-lg p-6 bg-white h-full flex flex-col justify-between">
                             <div>
                                 <h3 className="text-xl font-bold mb-4">Pro</h3>
                                 <ul className="mb-6">
@@ -221,7 +221,7 @@ function LandingPage() {
                 <div className="px-4 mb-8 w-full sm:w-1/2 md:w-1/3">
                     <div className="relative h-full">
                         <div className="absolute top-0 left-0 w-full h-full blurred-circle-custom z-0 rounded-lg"></div>
-                        <div className="relative z-10 shadow-lg rounded-lg p-6 bg-white h-full flex flex-col justify-between">
+                        <div className="relative z-10 rounded-lg p-6 bg-white h-full flex flex-col justify-between">
                             <div>
                                 <h3 className="text-xl font-bold mb-4">Custom</h3>
                                 <ul className="mb-6">
