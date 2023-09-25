@@ -98,18 +98,24 @@ function LandingPage() {
 
 
          {/* First Section - Text on Left */}
-         <div className="max-w-xl flex flex-col md:flex-row justify-between items-center p-8 mt-10 space-y-8 md:space-y-0 md:space-x-8">
-        <div className="flex-1">
-          <h2 className="text-left text-gray-700 text-3xl font-semibold line-clamp-3 italic">Meet the Surge of EV Charging</h2>
-          <p className='text-sm mt-4'>The current buildout of charging infrastructure falls short of meeting the surging demand for EV charging. Charging Point Operators lack an efficient tool to initiate projects faster and more cost-effective.</p>
-        </div>
+         <div className="max-w-xl flex flex-col md:flex-row justify-between items-center p-8 mt-10 space-y-8 md:space-y-0 md:space-x-8 relative">
 
-        <div className="relative w-full md:w-1/4">
-        <Link to="/demo" className="mt-4 px-6 py-2 border rounded bg-green-500 text-white hover:bg-green-600 transition">
+{/* Blurred Circle */}
+<div className="absolute bottom-4 left-3/4 transform -translate-x-1/2 w-80 h-80 md:w-144 md:h-144 blurred-circle-2"></div> {/* Adjusted positioning with "bottom-4" and z-index in the CSS class */}
+
+<div className="flex-1 z-10"> {/* Added z-10 to ensure it's above the blurred circle */}
+  <h2 className="text-left text-gray-700 text-3xl font-semibold line-clamp-3 italic">Meet the Surge of EV Charging</h2>
+  <p className='text-sm mt-4'>The current buildout of charging infrastructure falls short of meeting the surging demand for EV charging. Charging Point Operators lack an efficient tool to initiate projects faster and more cost-effective.</p>
+</div>
+
+<div className="flex w-full md:w-1/4 items-center justify-center z-10"> {/* Added z-10 to ensure it's above the blurred circle */}
+  <Link to="/demo" className="mt-4 px-6 py-2 border rounded bg-green-500 text-white hover:bg-green-600 hover:text-white transition">
     Try Demo
-</Link>
-        </div>
-      </div>
+  </Link>
+</div>
+</div>
+
+
 
 {/* Abous us */}
 <h2 id="about-us" className="text-left text-gray-700 text-3xl font-semibold line-clamp-3 italic">The Eneport Team</h2>
