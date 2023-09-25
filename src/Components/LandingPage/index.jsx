@@ -52,7 +52,7 @@ function LandingPage() {
         <div className="relative flex flex-col items-center justify-center h-screen mb-4 mt-[calc(-10vh)] md:mt-[calc(0vh)]">
 
 {/* Blurred Circle Background */}
-<div className="absolute w-full h-full md:w-[500px] md:h-[500px] blurred-circle"></div>
+<div className="hidden absolute w-full h-full md:w-[500px] md:h-[500px] blurred-circle"></div>
 
 {/* Wrapper div to position content above the circle */}
 <div className="relative z-10 flex flex-col items-center justify-center">
