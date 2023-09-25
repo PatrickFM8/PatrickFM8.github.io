@@ -114,7 +114,7 @@ button:focus-visible {
 
 .blurred-circle {
   background-image: radial-gradient(circle, #cacffa, #c9d4ef 26%, #aed3ff 53%, #9bffa5 74%, #d798e1);
-  filter: blur(50px);
+ 
   border-radius: 50%;
   z-index: 0;
 }
