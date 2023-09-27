@@ -52,7 +52,7 @@ function LandingPage() {
         <div className="relative flex flex-col items-center justify-center h-screen mb-4 mt-[calc(-10vh)] md:mt-[calc(0vh)]">
 
 {/* Blurred Circle Background */}
-<div className="hidden absolute w-full h-full md:w-[500px] md:h-[500px] blurred-circle"></div>
+<div className="hidden absolute w-full h-full md:w-[500px] md:h-[500px]"></div>
 
 {/* Wrapper div to position content above the circle */}
 <div className="relative z-10 flex flex-col items-center justify-center">
@@ -101,7 +101,7 @@ function LandingPage() {
          <div className="max-w-xl flex flex-col md:flex-row justify-between items-center p-8 mt-10 space-y-8 md:space-y-0 md:space-x-8 relative">
 
 {/* Blurred Circle */}
-<div className="absolute bottom-4 left-3/4 transform -translate-x-1/2 w-80 h-80 md:w-144 md:h-144 blurred-circle-2"></div> {/* Adjusted positioning with "bottom-4" and z-index in the CSS class */}
+<div className="absolute bottom-4 left-3/4 transform -translate-x-1/2 w-80 h-80 md:w-144 md:h-144"></div> {/* Adjusted positioning with "bottom-4" and z-index in the CSS class */}
 
 <div className="flex-1 z-10"> {/* Added z-10 to ensure it's above the blurred circle */}
   <h2 className="text-left text-gray-700 text-3xl font-semibold line-clamp-3 italic">Meet the Surge of EV Charging</h2>
@@ -125,7 +125,7 @@ function LandingPage() {
   <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
-  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
   <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
     <img src="Anoya.png" alt="Anoya Yousef"></img> {/* Added an alt attribute for accessibility */}
@@ -139,7 +139,7 @@ function LandingPage() {
   <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
-  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
   <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
  
@@ -153,7 +153,7 @@ function LandingPage() {
 <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
-  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
   <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
  
@@ -167,7 +167,7 @@ function LandingPage() {
 <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
-  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
   <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
     <img src="pw.png" alt="Patrick Widuch"></img> {/* Added an alt attribute for accessibility */}
@@ -182,7 +182,7 @@ function LandingPage() {
   <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
-  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
   <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
  
@@ -196,7 +196,7 @@ function LandingPage() {
   <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
-  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blurred-circle-team"></div> {/* Positioned centered behind the image */}
+  <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
   <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
  
@@ -223,8 +223,8 @@ function LandingPage() {
                 {/* Card Wrapper for Sizing */}
                 <div className="px-4 mb-8 w-full sm:w-1/2 md:w-1/3">
                     <div className="relative h-full">
-                        <div className="absolute top-0 left-0 w-full h-full blurred-circle-free z-0 rounded-lg"></div>
-                        <div className="relative z-10 rounded-lg p-6 bg-slate-100 h-full flex flex-col justify-between">
+                      
+                        <div className="relative z-10 rounded-lg p-6 bg-white h-full flex flex-col justify-between mr-6">
                             <div>
                                 <h3 className="text-xl font-bold mb-4">Free</h3>
                                 <ul className="mb-6">
