@@ -114,14 +114,14 @@ button:focus-visible {
 
 .blurred-circle {
   background-image: radial-gradient(circle, #cacffa, #c9d4ef 26%, #aed3ff 53%, #9bffa5 74%, #d798e1);
-  filter: blur(140px);
+  filter: blur(40px);
   border-radius: 50%;
   z-index: 0;
 }
 
 .blurred-circle-2 {
   background-image: radial-gradient(circle, #ca34cafa, #c9d4ef 16%, #aed3ff 83%, #3faaa5 74%, #d798e1);
-  filter: blur(80px);
+  filter: blur(40px);
   border-radius: 50%;
   z-index: 0;
 }
@@ -151,7 +151,7 @@ button:focus-visible {
 }
 
 .blurred-circle-team {
-  filter: blur(70px);
+  filter: blur(60px);
   border-radius: 50%;
   z-index: 0;
   background-image: radial-gradient(circle, #a8e6cf, #56c084 26%, #7fc7f3 53%, #569ed1 74%, #1b588a);
@@ -159,14 +159,14 @@ button:focus-visible {
 
 
 .blurred-circle-team-blue {
-  filter: blur(70px);
+  filter: blur(60px);
   border-radius: 50%;
   z-index: 0;
   background-image: radial-gradient(circle, #a8e6fa, #7fc7f3 26%, #569ed1 53%, #337ab2 74%, #1b588a);
 }
 
 .blurred-circle-team-green {
-  filter: blur(70px);
+  filter: blur(60px);
   border-radius: 50%;
   z-index: 0;
   background-image: radial-gradient(circle, #a8e6cf, #7fd3a7 56%, #56c084 53%, #339a5e 84%, #1b7040);
@@ -174,6 +174,6 @@ button:focus-visible {
 
 @media (max-width: 768px) { /* or another appropriate breakpoint */
   .blurred-circle {
-      filter: blur(80px); /* Adjust value based on what looks best on iPhone */
+      filter: blur(60px); /* Adjust value based on what looks best on iPhone */
   }
 }
