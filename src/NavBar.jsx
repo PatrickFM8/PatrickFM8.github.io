@@ -104,7 +104,7 @@ export default function NavBar() {
                 <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
                 <div className="flex h-16 shrink-0 items-center mt-4">
           <img src="logo.png" width="60" height="60" alt="Eneport Logo" className=''></img>
-          <p>E N E P O R T</p>
+          <p className='text-black text-md'>E N E P O R T</p>
           
           </div>
                   <nav className="flex flex-1 flex-col">
