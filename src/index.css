@@ -144,10 +144,10 @@ button:focus-visible {
 }
 
 .blurred-circle-custom {
+  background-image: radial-gradient(circle, #cacffa, #c9d4ef 90%, #aed3ff 83%, #c19bff 64%);
   filter: blur(10px);
   border-radius: 50%;
   z-index: 0;
-  background-image: radial-gradient(circle, #cad2fa, #c9b4af 96%, #aad1ff 90%, #9ba0a5 84%);
 }
 
 .blurred-circle-team {

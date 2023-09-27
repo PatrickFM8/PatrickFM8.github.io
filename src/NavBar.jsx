@@ -102,9 +102,11 @@ export default function NavBar() {
                   </div>
                 </Transition.Child>
                 <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
-                  <div className="flex h-16 shrink-0 items-center">
-                   ENEPORT
-                  </div>
+                <div className="flex h-16 shrink-0 items-center mt-4">
+          <img src="logo.png" width="60" height="60" alt="Eneport Logo" className=''></img>
+          <p>E N E P O R T</p>
+          
+          </div>
                   <nav className="flex flex-1 flex-col">
                   <ul role="list" className="-mx-2 space-y-1">
         {navigation.map((item) => (
@@ -114,7 +116,7 @@ export default function NavBar() {
               onClick={() => handleMainNavigationClick(item.href)} // Add this line
               className={classNames(
                 item.current ? 'bg-gray-200 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-                'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                'group flex gap-x-3 rounded-md p-2 text-md leading-6 font-semibold'
               )}
             >
               <item.icon
@@ -135,7 +137,7 @@ export default function NavBar() {
                       to={subItem.href}
                       className={classNames(
                         subItem.current ? 'bg-gray-200 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-                        'group flex gap-x-3 rounded-md p-1 text-xs leading-6 font-semibold'
+                        'group flex gap-x-3 rounded-md p-2 text-md leading-6 font-regular'
                       )}
                     >
                       {subItem.name}
