@@ -131,7 +131,7 @@ function LandingPage() {
     <img src="Anoya.png" alt="Anoya Yousef"></img> {/* Added an alt attribute for accessibility */}
   </div>
   <h3 className="text-gray-700 font-semibold z-10">Anoya Yousef</h3>
-  <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CTO</h5>
+  <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CEO</h5>
   <p className="hidden text-sm text-gray-600 text-center">Short description for card 4.</p>
 </div>
 
@@ -141,8 +141,8 @@ function LandingPage() {
   {/* Blurred Circle */}
   <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
-  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
- 
+  <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+    <img src="Christoffer.png" alt="Anoya Yousef"></img> {/* Added an alt attribute for accessibility */}
   </div>
   <h3 className="text-gray-700 font-semibold z-10">Christoffer Eriksson</h3>
   <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CSO</h5>
@@ -198,8 +198,8 @@ function LandingPage() {
   {/* Blurred Circle */}
   <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
-  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
- 
+  <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+    <img src="Axel.png" alt="Patrick Widuch"></img> {/* Added an alt attribute for accessibility */}
   </div>
     <h3 className="text-gray-700 font-semibold z-10">Axel Tardell</h3>
     <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">COO</h5>
