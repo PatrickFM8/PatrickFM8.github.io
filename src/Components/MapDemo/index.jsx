@@ -28,7 +28,7 @@ function MapDemo() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution=''
           />
-          <CircleMarker center={centerCoordinates} radius={20} color="blue" fillColor="blue" fillOpacity={0.6} />
+       
           {
             showPins && (
               <>
