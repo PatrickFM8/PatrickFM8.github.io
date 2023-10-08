@@ -179,14 +179,14 @@ function LandingPage() {
 </div>
 
 
-  {/* Card 5 */}
+  {/* Card 4 */}
   <div className="rounded-lg p-4 flex flex-col items-center relative"> {/* Add "relative" here for positioning the blurred circle */}
   
   {/* Blurred Circle */}
   <div className="absolute w-32 h-32 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div> {/* Positioned centered behind the image */}
   
-  <div className="w-32 h-32 bg-gray-300 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
- 
+  <div className="w-32 h-32 rounded-full mb-4 relative z-10"> {/* Add "relative z-10" to ensure the image is above the blurred circle */}
+    <img src="Jan.png" alt="Patrick Widuch"></img> {/* Added an alt attribute for accessibility */}
   </div>
     <h3 className="text-gray-700 font-semibold z-10">Jan Carius</h3>
     <h5 className="text-gray-700 font-semibold mb-2 text-xs z-10">CFO</h5>
